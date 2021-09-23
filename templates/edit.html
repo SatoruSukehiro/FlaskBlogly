@@ -1,0 +1,33 @@
+{%extends 'index.html'%}
+
+{%block content%}
+<div class='container-fluid'>
+    <div class='row'>
+       <h1>Edit Your Profile</h1> 
+    </div>
+    
+    <div class= row>
+         <form action="" method=POST>
+    <div class= col-12>
+        <label for="first_name">
+        First Name:   <input type="text" name=first value='{{user.fname}}'>
+        </label>
+    </div>
+    <div class='col-12'>
+        <label for="last_name">
+        Last Name: <input type="text" name=last value = '{{user.lname}}'>
+        </label>
+    </div>
+    <div class='col-12'>
+         <label for="profile_pic">
+        Display Image<input type="text" name=url value= '{{user.image}}'>
+        </label>
+        <input type="submit">
+    </div>
+        </form>  
+    </div>
+</div>
+
+    
+{%endblock%}
+© 2021 GitHub, Inc.

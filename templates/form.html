@@ -1,0 +1,33 @@
+{%extends 'index.html'%}
+{%block title%} 
+    
+{%endblock%}
+{%block content%}
+    <div class='container-fluid'>
+        <div class='row'>
+          <h1>Create A User</h1>  
+        </div>
+        
+        <div class= row>
+             <form action="" method=POST>
+        <div class= col-12>
+            <label for="first_name">
+            First Name:   <input type="text" name=first>
+            </label>
+        </div>
+        <div class='col-12'>
+            <label for="last_name">
+            Last Name: <input type="text" name=last>
+            </label>
+        </div>
+        <div class='col-12'>
+             <label for="profile_pic">
+            Display Image<input type="text" name=url>
+            </label>
+            <input type="submit">
+        </div>
+            </form>  
+        </div>
+    </div>
+ 
+{%endblock%}

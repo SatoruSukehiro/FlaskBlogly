@@ -1,0 +1,30 @@
+{%extends 'index.html'%}
+{%block title%} 
+    
+{%endblock%}
+{%block content%}
+    <div class='container-fluid'>
+        <div class='row'>
+          <h1>Create A Post</h1>  
+        </div>
+        
+        
+             <form  action="" method=POST>
+                 <div class= row>
+                 <label for="Title">
+                     Title:
+                     <input class= col-12 name = "title" type="text">
+                 </label>
+                <label for="Content">
+                    Content:
+                    <textarea name="content" id="" cols="50" rows="10" class=col-12></textarea>
+                </label>
+                
+            </div>
+            <input type="submit" value="Create Post">
+            
+            </form>  
+        
+    </div>
+ 
+{%endblock%}

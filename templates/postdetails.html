@@ -1,0 +1,15 @@
+{%extends "index.html"%}
+
+{%block content%}
+ <h1>
+     {{post.title}}
+ </h1>
+ <p>
+     {{post.content}} by: {{post.user.get_full_name()}} 
+ </p>
+ <form action="">
+     <input type="submit" formaction="/posts/{{post.id}}/edit" value="Edit">
+     <input type="submit" value="Delete" formaction="/posts/{{post.id}}/delete">
+ </form>
+    <a href="">Cancel</a>
+{%endblock%}

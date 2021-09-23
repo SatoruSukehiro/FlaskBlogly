@@ -1,0 +1,30 @@
+{%extends 'index.html'%}
+
+{%block content%}
+<div class='container-fluid'>
+    <div class = row>
+        <h1>Edit Posts</h1>
+    </div>
+    <div class= row>
+        <form action="" method='POST'>
+            <div class = col-12>
+                <label for="title">
+                    Title:
+                    <input  class = col-12 type="text" value = "{{post.title}}" name='title'>
+                </label>
+                
+            </div>
+            <div class = col-12>
+                <label for="content">
+                    Content: <textarea class=col-12 name="content" id="" cols="30" rows="10" >{{post.content}}</textarea>
+                </label>
+                
+            </div>
+            <input type="submit">
+        </form> 
+    </div>
+</div>
+
+    
+{%endblock%}
+© 2021 GitHub, Inc.
