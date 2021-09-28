@@ -22,7 +22,12 @@
                 
             </div>
             <input type="submit" value="Create Post">
-            
+                {%for tag in tags%}
+                    <input type="checkbox" value={{tag.id}} name='tags'>
+                    <label for="">
+                        {{tag.name}}
+                    </label>
+                {%endfor%}
             </form>  
         
     </div>

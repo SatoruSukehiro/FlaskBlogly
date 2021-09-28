@@ -1,0 +1,22 @@
+{%extends "index.html"%}
+
+{%block content%}
+    <div class="container-fluid">
+        <div class='row'>
+            <h1>
+                Create A New Tag
+            </h1>
+        </div>
+        <div class = 'row'>
+            <form method="POST">
+                <label for="name">
+                    <input type="text" name='name'>
+                    <input type="submit" value="Add">
+                </label>
+                <a href="/users">Cancel</a>
+            </form>
+        </div>
+    </div>
+
+
+{%endblock%}

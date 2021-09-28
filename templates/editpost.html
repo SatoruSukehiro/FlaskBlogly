@@ -21,7 +21,25 @@
                 
             </div>
             <input type="submit">
+            {%for tag in tags%}
+                <label for="{{tag.name}}">
+                   {{tag.name}}
+                    <input value="{{tag.id}}" type="checkbox" 
+                    name="tags"
+                    {%if tag in post.tags %}
+                    checked
+                    {%endif%}
+                    >
+                </label>
+           
+                                
+          
+                
+            {%endfor%}
+            
+            
         </form> 
+        
     </div>
 </div>
 

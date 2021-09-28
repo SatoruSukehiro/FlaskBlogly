@@ -1,0 +1,38 @@
+{%extends "index.html"%}
+
+{%block content%}
+    <div class="container-fluid">
+        <div class='row'>
+            <h1>
+                Edit Tag
+            </h1>
+        </div>
+        <div class = 'row'>
+            <form method="POST">
+                <label for="name">
+                    <input type="text" name='name' value = {{tag.name}}>
+                    <input type="submit" value="Add">
+                </label>
+                <a href="/tags">Cancel</a>
+                <br>
+                {%for post in tag.posts%}
+                    <label for="posts">
+                        {{post.title}}
+                        <input type="checkbox" name="posts" 
+                        value="{{post.id}}" 
+                        {%if post in tag.posts%}
+                            checked
+                        {%endif%}
+                        >
+                    </label>
+                    
+                    
+                
+            {%endfor%}
+            </form>
+            
+        </div>
+    </div>
+
+
+{%endblock%}

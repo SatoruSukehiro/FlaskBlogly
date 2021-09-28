@@ -1,0 +1,26 @@
+{%extends 'index.html'%}
+
+{%block content%}
+    <div class="container-fluid">
+        <div class="row">
+            <h1>{{tag.name}}</h1>
+        </div>
+        <div class="row">
+            <ul>
+                {%for post in tag.posts %}
+                    <li>
+                        <a href="/posts/{{post.id}}">{{post.title}}</a>
+                    </li>
+                {%endfor%}
+            </ul>
+        </div>
+        <div class="row">
+            <form action="">
+                <input formaction="/tags/{{tag.id}}/edit"type="submit" value="edit">
+                <input formaction="/tags/{{tag.id}}/delete"type="submit" value="Delete">
+            </form>
+        </div>
+    </div>
+    
+
+{%endblock%}

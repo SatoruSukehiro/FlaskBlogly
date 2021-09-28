@@ -11,5 +11,8 @@
      <input type="submit" formaction="/posts/{{post.id}}/edit" value="Edit">
      <input type="submit" value="Delete" formaction="/posts/{{post.id}}/delete">
  </form>
-    <a href="">Cancel</a>
+    {%for tag in post.tags%}
+        {{tag.name}}
+    {%endfor%}
+    <a href="/users/{{post.user.id}}">Cancel</a>
 {%endblock%}
